@@ -2,14 +2,17 @@
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+const settings = {
+  API_URL: 'http://locahost:4200/',
+  HMR: true,
+  APP_STORAGE_KEY: 'krunalujwal',
+  PRODUCTION: false
 };
 
-/*
- * In development mode, for easier debugging, you can ignore zone related error
- * stack frames such as `zone.run`/`zoneDelegate.invokeTask` by importing the
- * below file. Don't forget to comment it out in production mode
- * because it will have a performance impact when errors are thrown
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+export const environment = {
+  apiUrl: (typeof settings.API_URL !== 'undefined') ? settings.API_URL : 'http://locahost:4200/',
+  localStorageKey: (settings.APP_STORAGE_KEY !== undefined) ? settings.APP_STORAGE_KEY : 'krunalujwal',
+  production: (settings.PRODUCTION !== undefined) ? settings.PRODUCTION : false,
+  hmr: (settings.HMR !== undefined) ? settings.HMR : false
+};
