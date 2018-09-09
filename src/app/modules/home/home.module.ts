@@ -5,6 +5,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { InputTextModule } from 'primeng/inputtext';
 import {CardModule} from 'primeng/card';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import {CardModule} from 'primeng/card';
     InputTextModule,
     CardModule
   ],
-  declarations: [LoginComponent, RegistrationComponent]
+  declarations: [LoginComponent, RegistrationComponent, HomePageComponent]
 })
 export class HomeModule { }

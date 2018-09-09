@@ -6,4 +6,11 @@
   <img src="{{imageUrl}}" alt=""  width="50%" >
 </div>
 <app-post *ngFor="let user of users" [user]="user"></app-post> -->
+
+<div>
+  <ul>
+    <li [routerLink]="['app','users']">Users</li>
+    <li [routerLink]="['app','grid-tabs']">Grid Tabs</li>
+  </ul>
+</div>
 <router-outlet></router-outlet>

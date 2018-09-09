@@ -1,0 +1,24 @@
+<mat-tab-group>
+  <mat-tab label="HTML">
+    <pre style="font-size: 15px">
+        {{htmlCode}}
+        <span class="copy-icon" (click)="copyCode('HTML')">
+          <mat-icon>filter_none</mat-icon>
+        </span>
+    </pre>
+  </mat-tab>
+  <mat-tab label="TS">
+    <pre style="font-size: 15px">
+        {{componentCode}}
+    </pre>
+  </mat-tab>
+  <mat-tab label="CSS">
+    <pre style="font-size: 15px">
+        {{cssCode}}
+        <span class="copy-icon" (click)="copyCode('css')">
+          <mat-icon>filter_none</mat-icon>
+        </span>
+    </pre>
+  </mat-tab>
+</mat-tab-group>
+<p-toast [style]="{background:'#aef9c7'}" position="bottom-center"></p-toast>

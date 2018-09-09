@@ -1,0 +1,10 @@
+<article>
+  <form id="filter">
+    <input type="text" name="searchKey" [(ngModel)]="searchKey" placeholder="Search here..">
+  </form>
+  <ul>
+    <li *ngFor="let user of users">
+      <h3>{{ user.name }}</h3>
+    </li>
+  </ul>
+</article>
