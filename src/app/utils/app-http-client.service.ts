@@ -24,4 +24,16 @@ export class AppHttpClientService {
     return this.http.get<T>(this.apiUrl + endUrl, options);
   }
 
+  public put(url, data) {
+    return this.http.put(url, data);
+  }
+
+  public post(url, data) {
+    return this.http.put(url, data);
+  }
+
+  public get2(url) {
+    return this.http.get(url);
+  }
+
 }

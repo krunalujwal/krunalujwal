@@ -11,6 +11,15 @@ export class HttpRequestService {
 
   getAppConfig(url) {
     this.http.get(url).pipe(map(result => {
+
     }));
+  }
+
+  addUsersToFirebase(payload) {
+    return this.http.post('https://krunalujwal-abba1.firebaseio.com/users.json', payload);
+  }
+
+  getUserDetails() {
+    return this.http.get2('https://krunalujwal-abba1.firebaseio.com/users.json');
   }
 }

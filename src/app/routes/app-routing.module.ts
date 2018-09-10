@@ -38,8 +38,8 @@ export const routeConfig: Routes = [
     children: [
       {
         path: '',
-        // loadChildren: 'app/modules/krunalujwal/krunalujwal.module#KrunalujwalModule',
-        loadChildren: () => KrunalujwalModule
+        loadChildren: 'app/modules/krunalujwal/krunalujwal.module#KrunalujwalModule',
+        // loadChildren: () => KrunalujwalModule
       }
     ]
   },
